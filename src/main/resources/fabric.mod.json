@@ -1,0 +1,50 @@
+{
+	"schemaVersion": 1,
+	"id": "primitive_life",
+	"version": "${version}",
+	"name": "Primitive Life",
+	"description": "TO-DO",
+	"authors": [
+		"TO-DO"
+	],
+	"contact": {
+		"homepage": "TO-DO",
+		"sources": "TO-DO"
+	},
+	"license": "TO-DO",
+	"icon": "assets/primitive_life/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "taxxon.primitive_life.PrimitiveLife",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "taxxon.primitive_life.PrimitiveLifeClient",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "taxxon.primitive_life.PrimitiveLifeDataGenerator",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"primitive_life.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-language-kotlin": ">=1.9.10"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
