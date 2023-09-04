@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#primitive_life:timber/barked/logs",
+    "#primitive_life:timber/stripped/logs"
+  ]
+}

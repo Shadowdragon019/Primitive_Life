@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#primitive_life:timber/woods",
+    "#primitive_life:timber/logs"
+  ]
+}

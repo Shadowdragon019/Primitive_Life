@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "wedge_count=1": {
+      "model": "primitive_life:block/cherry_wedge_1"
+    },
+    "wedge_count=2": {
+      "model": "primitive_life:block/cherry_wedge_2"
+    },
+    "wedge_count=3": {
+      "model": "primitive_life:block/cherry_wedge_3"
+    },
+    "wedge_count=4": {
+      "model": "primitive_life:block/cherry_wedge_4"
+    }
+  }
+}

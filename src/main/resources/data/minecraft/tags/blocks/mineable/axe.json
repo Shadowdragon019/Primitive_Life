@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "primitive_life:oak_wedge",
+    "primitive_life:spruce_wedge",
+    "primitive_life:birch_wedge",
+    "primitive_life:jungle_wedge",
+    "primitive_life:acacia_wedge",
+    "primitive_life:dark_oak_wedge",
+    "primitive_life:mangrove_wedge",
+    "primitive_life:cherry_wedge",
+    "primitive_life:crimson_wedge",
+    "primitive_life:warped_wedge"
+  ]
+}

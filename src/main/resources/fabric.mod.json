@@ -29,7 +29,7 @@
 		],
 		"fabric-datagen": [
 			{
-				"value": "taxxon.primitive_life.PrimitiveLifeDataGenerator",
+				"value": "taxxon.primitive_life.datagen.ModDatagen",
 				"adapter": "kotlin"
 			}
 		]

@@ -1,0 +1,7 @@
+{
+  "parent": "primitive_life:block/wedge_4",
+  "textures": {
+    "side": "minecraft:block/stripped_cherry_log",
+    "top": "minecraft:block/stripped_cherry_log_top"
+  }
+}
