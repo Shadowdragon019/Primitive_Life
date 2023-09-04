@@ -40,7 +40,7 @@ class WedgeBlock(_type: String, settings: Settings): Block(settings), Waterlogga
     init {
         //type = _type
         defaultState = defaultState
-                .with(ModProperties.wedge_count, 1)
+                .with(ModProperties.wedges, 1)
                 .with(Properties.WATERLOGGED, false)
         if (!is_nether) {
             FlammableBlockRegistry.getDefaultInstance().add(this, 5, 5)
@@ -48,13 +48,13 @@ class WedgeBlock(_type: String, settings: Settings): Block(settings), Waterlogga
     }
 
     override fun getOutlineShape(state: BlockState, world: BlockView?, pos: BlockPos?, context: ShapeContext?): VoxelShape {
-        return wedge_shape[state.get(ModProperties.wedge_count)-1]
+        return wedge_shape[state.get(ModProperties.wedges)-1]
     }
 
     override fun getPlacementState(ctx: ItemPlacementContext): BlockState {
         val blockState = ctx.world.getBlockState(ctx.blockPos)
         if (blockState.isOf(this)) {
-            return blockState.with(ModProperties.wedge_count, min(4.0, (blockState.get(ModProperties.wedge_count) + 1).toDouble()).toInt())
+            return blockState.with(ModProperties.wedges, min(4.0, (blockState.get(ModProperties.wedges) + 1).toDouble()).toInt())
         }
         val fluidState = ctx.world.getFluidState(ctx.blockPos)
         val bl = fluidState.fluid === Fluids.WATER
@@ -63,8 +63,8 @@ class WedgeBlock(_type: String, settings: Settings): Block(settings), Waterlogga
 
     override fun onUse(state: BlockState, world: World, pos: BlockPos, player: PlayerEntity, hand: Hand, hit: BlockHitResult): ActionResult {
         if (!player.isSneaking && player.mainHandStack.isOf(Items.AIR)) {
-            if (state.get(ModProperties.wedge_count)>1) {
-                world.setBlockState(pos, state.with(ModProperties.wedge_count, state.get(ModProperties.wedge_count)-1))
+            if (state.get(ModProperties.wedges)>1) {
+                world.setBlockState(pos, state.with(ModProperties.wedges, state.get(ModProperties.wedges)-1))
             } else {
                 world.setBlockState(pos, Blocks.AIR.defaultState)
             }
@@ -76,7 +76,7 @@ class WedgeBlock(_type: String, settings: Settings): Block(settings), Waterlogga
     }
 
     override fun canReplace(state: BlockState, context: ItemPlacementContext): Boolean {
-        return if (!context.shouldCancelInteraction() && context.stack.isOf(asItem()) && state.get(ModProperties.wedge_count) < 4) {
+        return if (!context.shouldCancelInteraction() && context.stack.isOf(asItem()) && state.get(ModProperties.wedges) < 4) {
             true
         } else super.canReplace(state, context)
     }
@@ -107,6 +107,6 @@ class WedgeBlock(_type: String, settings: Settings): Block(settings), Waterlogga
     }
 
     override fun appendProperties(builder: StateManager.Builder<Block?, BlockState?>) {
-        builder.add(ModProperties.wedge_count, Properties.WATERLOGGED)
+        builder.add(ModProperties.wedges, Properties.WATERLOGGED)
     }
 }

@@ -4,10 +4,8 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider
 import net.minecraft.data.client.*
 import net.minecraft.util.Identifier
-import taxxon.primitive_life.ModIdentifier
 import taxxon.primitive_life.ModModels
 import taxxon.primitive_life.ModTextureKey
-import taxxon.primitive_life.PrimitiveLife.id
 import taxxon.primitive_life.blocks.ModBlocks
 import taxxon.primitive_life.blocks.ModProperties
 
@@ -17,7 +15,7 @@ class ModelGen(generator: FabricDataOutput) : FabricModelProvider(generator) {
             val log_type = if (wedge.type == "crimson" || wedge.type == "warped") "stem" else "log"
             blockStateModelGenerator?.blockStateCollector?.accept(
                     VariantsBlockStateSupplier.create(wedge).coordinate(BlockStateVariantMap.create(
-                            ModProperties.wedge_count
+                            ModProperties.wedges
                     ).register {
                         BlockStateVariant.create().put(
                                 VariantSettings.MODEL, blockStateModelGenerator.createSubModel(wedge, "_$it", ModModels.wedges[it-1]

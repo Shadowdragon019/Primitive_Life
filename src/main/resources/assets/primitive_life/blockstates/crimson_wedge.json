@@ -1,15 +1,15 @@
 {
   "variants": {
-    "wedge_count=1": {
+    "wedges=1": {
       "model": "primitive_life:block/crimson_wedge_1"
     },
-    "wedge_count=2": {
+    "wedges=2": {
       "model": "primitive_life:block/crimson_wedge_2"
     },
-    "wedge_count=3": {
+    "wedges=3": {
       "model": "primitive_life:block/crimson_wedge_3"
     },
-    "wedge_count=4": {
+    "wedges=4": {
       "model": "primitive_life:block/crimson_wedge_4"
     }
   }

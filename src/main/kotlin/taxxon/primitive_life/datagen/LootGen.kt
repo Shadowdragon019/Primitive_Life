@@ -28,7 +28,7 @@ class LootGen(dataOutput: FabricDataOutput?) : FabricBlockLootTableProvider(data
                                     ).conditionally(
                                             BlockStatePropertyLootCondition.builder(block).properties(
                                                     StatePredicate.Builder.create()
-                                                            .exactMatch(ModProperties.wedge_count, wedges)
+                                                            .exactMatch(ModProperties.wedges, wedges)
                                             )
                                     )
                                 }

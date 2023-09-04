@@ -38,7 +38,7 @@ object PrimitiveLife : ModInitializer {
 			val state = world.getBlockState(pos)
 			val block = state.block
 			if (!player.isSpectator && player.mainHandStack.isIn(ItemTags.AXES) && stripped_to_wedge.contains(block) && state.get(Properties.AXIS) == Direction.Axis.Y && hand == Hand.MAIN_HAND) {
-				world.setBlockState(result.blockPos, stripped_to_wedge[block]?.defaultState?.with(ModProperties.wedge_count, 4))
+				world.setBlockState(result.blockPos, stripped_to_wedge[block]?.defaultState?.with(ModProperties.wedges, 4))
 				world.playSound(player, pos, SoundEvents.ITEM_AXE_STRIP, SoundCategory.BLOCKS, 1.0f, 1.0f)
 				player.swingHand(hand)
 				player.mainHandStack.damage(1, player) {
