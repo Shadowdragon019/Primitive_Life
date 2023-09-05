@@ -1,0 +1,100 @@
+{
+  "variants": {
+    "planks=1": {
+      "model": "primitive_life:block/plank/dark_oak/1"
+    },
+    "planks=10": {
+      "model": "primitive_life:block/plank/dark_oak/10"
+    },
+    "planks=11": {
+      "model": "primitive_life:block/plank/dark_oak/11"
+    },
+    "planks=12": {
+      "model": "primitive_life:block/plank/dark_oak/12"
+    },
+    "planks=13": {
+      "model": "primitive_life:block/plank/dark_oak/13"
+    },
+    "planks=14": {
+      "model": "primitive_life:block/plank/dark_oak/14"
+    },
+    "planks=15": {
+      "model": "primitive_life:block/plank/dark_oak/15"
+    },
+    "planks=16": {
+      "model": "primitive_life:block/plank/dark_oak/16"
+    },
+    "planks=17": {
+      "model": "primitive_life:block/plank/dark_oak/17"
+    },
+    "planks=18": {
+      "model": "primitive_life:block/plank/dark_oak/18"
+    },
+    "planks=19": {
+      "model": "primitive_life:block/plank/dark_oak/19"
+    },
+    "planks=2": {
+      "model": "primitive_life:block/plank/dark_oak/2"
+    },
+    "planks=20": {
+      "model": "primitive_life:block/plank/dark_oak/20"
+    },
+    "planks=21": {
+      "model": "primitive_life:block/plank/dark_oak/21"
+    },
+    "planks=22": {
+      "model": "primitive_life:block/plank/dark_oak/22"
+    },
+    "planks=23": {
+      "model": "primitive_life:block/plank/dark_oak/23"
+    },
+    "planks=24": {
+      "model": "primitive_life:block/plank/dark_oak/24"
+    },
+    "planks=25": {
+      "model": "primitive_life:block/plank/dark_oak/25"
+    },
+    "planks=26": {
+      "model": "primitive_life:block/plank/dark_oak/26"
+    },
+    "planks=27": {
+      "model": "primitive_life:block/plank/dark_oak/27"
+    },
+    "planks=28": {
+      "model": "primitive_life:block/plank/dark_oak/28"
+    },
+    "planks=29": {
+      "model": "primitive_life:block/plank/dark_oak/29"
+    },
+    "planks=3": {
+      "model": "primitive_life:block/plank/dark_oak/3"
+    },
+    "planks=30": {
+      "model": "primitive_life:block/plank/dark_oak/30"
+    },
+    "planks=31": {
+      "model": "primitive_life:block/plank/dark_oak/31"
+    },
+    "planks=32": {
+      "model": "primitive_life:block/plank/dark_oak/32"
+    },
+    "planks=4": {
+      "model": "primitive_life:block/plank/dark_oak/4"
+    },
+    "planks=5": {
+      "model": "primitive_life:block/plank/dark_oak/5"
+    },
+    "planks=6": {
+      "model": "primitive_life:block/plank/dark_oak/6"
+    },
+    "planks=7": {
+      "model": "primitive_life:block/plank/dark_oak/7"
+    },
+    "planks=8": {
+      "model": "primitive_life:block/plank/dark_oak/8"
+    },
+    "planks=9": {
+      "model": "primitive_life:block/plank/dark_oak/9"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "primitive_life:block/plank/8",
+  "textures": {
+    "planks": "minecraft:block/warped_planks"
+  }
+}

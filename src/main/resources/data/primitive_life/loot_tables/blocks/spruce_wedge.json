@@ -14,7 +14,7 @@
                   "block": "primitive_life:spruce_wedge",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "wedge_count": "2"
+                    "wedges": "2"
                   }
                 }
               ],
@@ -28,7 +28,7 @@
                   "block": "primitive_life:spruce_wedge",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "wedge_count": "3"
+                    "wedges": "3"
                   }
                 }
               ],
@@ -42,7 +42,7 @@
                   "block": "primitive_life:spruce_wedge",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "wedge_count": "4"
+                    "wedges": "4"
                   }
                 }
               ],

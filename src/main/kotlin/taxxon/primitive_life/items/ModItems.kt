@@ -15,15 +15,18 @@ object ModItems {
         return Registry.register(Registries.ITEM, ModIdentifier(path), item)
     }
 
-    private fun add_to_tab_entries(tab: FabricItemGroupEntries) {
+    private fun ingredient_entries(tab: FabricItemGroupEntries) {
         for (wedge in ModBlocks.wedges) {
             tab.add(wedge)
+        }
+        for (plank in ModBlocks.planks) {
+            tab.add(plank)
         }
     }
 
     fun register_items() {
         PrimitiveLife.logger.info("Register items for ${PrimitiveLife.name}")
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::add_to_tab_entries) // :: gets the function itself
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::ingredient_entries) // :: gets the function itself
     }
 }

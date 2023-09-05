@@ -10,30 +10,37 @@ import net.minecraft.loot.entry.ItemEntry
 import net.minecraft.loot.function.SetCountLootFunction
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider
 import net.minecraft.predicate.StatePredicate
+import net.minecraft.state.property.IntProperty
 import taxxon.primitive_life.blocks.ModBlocks
 import taxxon.primitive_life.blocks.ModProperties
+import taxxon.primitive_life.blocks.WedgeBlock
 
 class LootGen(dataOutput: FabricDataOutput?) : FabricBlockLootTableProvider(dataOutput) {
     override fun generate() {
-        for (wedge in ModBlocks.wedges) { // This is mostly copy-pasted, I'm too intimidated to try to make it look nicer
-            addDrop(wedge) { block: Block? ->
+        stackable(ModBlocks.wedges, ModProperties.wedges)
+        stackable(ModBlocks.planks, ModProperties.planks)
+    }
+
+    private fun <T: Block> stackable(blocks: MutableList<T>, property: IntProperty) {
+        for (block_1 in blocks) { // I have no clue what the difference between block_1 & block_2 is
+            addDrop(block_1) { block_2: Block? ->
                 LootTable.builder().pool(
-                        LootPool.builder().rolls(ConstantLootNumberProvider.create(1.0f)).with(
-                                applyExplosionDecay(
-                                        wedge, ItemEntry.builder(block).apply(
-                                        listOf(2, 3, 4)
-                                ) { wedges: Int ->
-                                    SetCountLootFunction.builder(
-                                            ConstantLootNumberProvider.create(wedges.toFloat())
-                                    ).conditionally(
-                                            BlockStatePropertyLootCondition.builder(block).properties(
-                                                    StatePredicate.Builder.create()
-                                                            .exactMatch(ModProperties.wedges, wedges)
-                                            )
+                    LootPool.builder().rolls(ConstantLootNumberProvider.create(1.0f)).with(
+                        applyExplosionDecay(
+                            block_1, ItemEntry.builder(block_2).apply(
+                                2..property.values.size
+                            ) { planks: Int ->
+                                SetCountLootFunction.builder(
+                                    ConstantLootNumberProvider.create(planks.toFloat())
+                                ).conditionally(
+                                    BlockStatePropertyLootCondition.builder(block_2).properties(
+                                        StatePredicate.Builder.create()
+                                            .exactMatch(property, planks)
                                     )
-                                }
                                 )
+                            }
                         )
+                    )
                 )
             }
         }

@@ -1,16 +1,16 @@
 {
   "variants": {
     "wedges=1": {
-      "model": "primitive_life:block/acacia_wedge_1"
+      "model": "primitive_life:block/wedge/acacia/1"
     },
     "wedges=2": {
-      "model": "primitive_life:block/acacia_wedge_2"
+      "model": "primitive_life:block/wedge/acacia/2"
     },
     "wedges=3": {
-      "model": "primitive_life:block/acacia_wedge_3"
+      "model": "primitive_life:block/wedge/acacia/3"
     },
     "wedges=4": {
-      "model": "primitive_life:block/acacia_wedge_4"
+      "model": "primitive_life:block/wedge/acacia/4"
     }
   }
 }

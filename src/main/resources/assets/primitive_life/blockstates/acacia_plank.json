@@ -1,0 +1,100 @@
+{
+  "variants": {
+    "planks=1": {
+      "model": "primitive_life:block/plank/acacia/1"
+    },
+    "planks=10": {
+      "model": "primitive_life:block/plank/acacia/10"
+    },
+    "planks=11": {
+      "model": "primitive_life:block/plank/acacia/11"
+    },
+    "planks=12": {
+      "model": "primitive_life:block/plank/acacia/12"
+    },
+    "planks=13": {
+      "model": "primitive_life:block/plank/acacia/13"
+    },
+    "planks=14": {
+      "model": "primitive_life:block/plank/acacia/14"
+    },
+    "planks=15": {
+      "model": "primitive_life:block/plank/acacia/15"
+    },
+    "planks=16": {
+      "model": "primitive_life:block/plank/acacia/16"
+    },
+    "planks=17": {
+      "model": "primitive_life:block/plank/acacia/17"
+    },
+    "planks=18": {
+      "model": "primitive_life:block/plank/acacia/18"
+    },
+    "planks=19": {
+      "model": "primitive_life:block/plank/acacia/19"
+    },
+    "planks=2": {
+      "model": "primitive_life:block/plank/acacia/2"
+    },
+    "planks=20": {
+      "model": "primitive_life:block/plank/acacia/20"
+    },
+    "planks=21": {
+      "model": "primitive_life:block/plank/acacia/21"
+    },
+    "planks=22": {
+      "model": "primitive_life:block/plank/acacia/22"
+    },
+    "planks=23": {
+      "model": "primitive_life:block/plank/acacia/23"
+    },
+    "planks=24": {
+      "model": "primitive_life:block/plank/acacia/24"
+    },
+    "planks=25": {
+      "model": "primitive_life:block/plank/acacia/25"
+    },
+    "planks=26": {
+      "model": "primitive_life:block/plank/acacia/26"
+    },
+    "planks=27": {
+      "model": "primitive_life:block/plank/acacia/27"
+    },
+    "planks=28": {
+      "model": "primitive_life:block/plank/acacia/28"
+    },
+    "planks=29": {
+      "model": "primitive_life:block/plank/acacia/29"
+    },
+    "planks=3": {
+      "model": "primitive_life:block/plank/acacia/3"
+    },
+    "planks=30": {
+      "model": "primitive_life:block/plank/acacia/30"
+    },
+    "planks=31": {
+      "model": "primitive_life:block/plank/acacia/31"
+    },
+    "planks=32": {
+      "model": "primitive_life:block/plank/acacia/32"
+    },
+    "planks=4": {
+      "model": "primitive_life:block/plank/acacia/4"
+    },
+    "planks=5": {
+      "model": "primitive_life:block/plank/acacia/5"
+    },
+    "planks=6": {
+      "model": "primitive_life:block/plank/acacia/6"
+    },
+    "planks=7": {
+      "model": "primitive_life:block/plank/acacia/7"
+    },
+    "planks=8": {
+      "model": "primitive_life:block/plank/acacia/8"
+    },
+    "planks=9": {
+      "model": "primitive_life:block/plank/acacia/9"
+    }
+  }
+}

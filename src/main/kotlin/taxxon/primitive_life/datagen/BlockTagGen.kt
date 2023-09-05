@@ -16,6 +16,10 @@ class BlockTagGen(output: FabricDataOutput?, registriesFuture: CompletableFuture
             getOrCreateTagBuilder(ModBlockTags.wedges).add(wedge)
             getOrCreateTagBuilder(BlockTags.AXE_MINEABLE).add(wedge)
         }
+        for (plank in ModBlocks.planks) {
+            getOrCreateTagBuilder(ModBlockTags.planks).add(plank)
+            getOrCreateTagBuilder(BlockTags.AXE_MINEABLE).add(plank)
+        }
         // This whole "Timber" thing is excessive, but I like it, make it a library later
         getOrCreateTagBuilder(ModBlockTags.timber_barked_logs).add(Blocks.OAK_LOG, Blocks.SPRUCE_LOG, Blocks.BIRCH_LOG, Blocks.JUNGLE_LOG, Blocks.ACACIA_LOG, Blocks.DARK_OAK_LOG, Blocks.MANGROVE_LOG, Blocks.CHERRY_LOG, Blocks.CRIMSON_STEM, Blocks.WARPED_STEM)
         getOrCreateTagBuilder(ModBlockTags.timber_barked_woods).add(Blocks.OAK_WOOD, Blocks.SPRUCE_WOOD, Blocks.BIRCH_WOOD, Blocks.JUNGLE_WOOD, Blocks.ACACIA_WOOD, Blocks.DARK_OAK_WOOD, Blocks.MANGROVE_WOOD, Blocks.CHERRY_WOOD, Blocks.CRIMSON_HYPHAE, Blocks.WARPED_HYPHAE)

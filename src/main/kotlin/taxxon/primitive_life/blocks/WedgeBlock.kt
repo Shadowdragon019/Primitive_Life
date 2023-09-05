@@ -38,7 +38,6 @@ class WedgeBlock(_type: String, settings: Settings): Block(settings), Waterlogga
     val is_nether = (type == "crimson" || type == "warped")
 
     init {
-        //type = _type
         defaultState = defaultState
                 .with(ModProperties.wedges, 1)
                 .with(Properties.WATERLOGGED, false)

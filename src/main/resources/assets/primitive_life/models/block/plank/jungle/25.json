@@ -1,0 +1,6 @@
+{
+  "parent": "primitive_life:block/plank/25",
+  "textures": {
+    "planks": "minecraft:block/jungle_planks"
+  }
+}

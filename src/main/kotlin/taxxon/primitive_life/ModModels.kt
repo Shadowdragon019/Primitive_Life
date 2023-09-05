@@ -7,7 +7,12 @@ import java.util.*
 object ModModels {
     val wedges = mutableListOf<Model>().also { list ->
         repeat(4) {
-            list.add(block("wedge_${it+1}", ModTextureKey.top, ModTextureKey.side))
+            list.add(block("wedge/${it+1}", ModTextureKey.top, ModTextureKey.side))
+        }
+    }
+    val planks = mutableListOf<Model>().also { list ->
+        repeat(32) {
+            list.add(block("plank/${it+1}", ModTextureKey.planks))
         }
     }
 

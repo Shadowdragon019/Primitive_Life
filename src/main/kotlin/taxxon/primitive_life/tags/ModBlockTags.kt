@@ -8,6 +8,7 @@ import taxxon.primitive_life.ModIdentifier
 
 object ModBlockTags {
     val wedges: TagKey<Block> = TagKey.of(RegistryKeys.BLOCK, ModIdentifier("wedges"))
+    val planks: TagKey<Block> = TagKey.of(RegistryKeys.BLOCK, ModIdentifier("planks"))
     val timber_barked_logs: TagKey<Block> = TagKey.of(RegistryKeys.BLOCK, ModIdentifier("timber/barked/logs"))
     val timber_barked_woods: TagKey<Block> = TagKey.of(RegistryKeys.BLOCK, ModIdentifier("timber/barked/woods"))
     val timber_stripped_logs: TagKey<Block> = TagKey.of(RegistryKeys.BLOCK, ModIdentifier("timber/stripped/logs"))

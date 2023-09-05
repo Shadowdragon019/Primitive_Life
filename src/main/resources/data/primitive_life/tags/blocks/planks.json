@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "primitive_life:oak_plank",
+    "primitive_life:spruce_plank",
+    "primitive_life:birch_plank",
+    "primitive_life:jungle_plank",
+    "primitive_life:acacia_plank",
+    "primitive_life:dark_oak_plank",
+    "primitive_life:mangrove_plank",
+    "primitive_life:cherry_plank",
+    "primitive_life:crimson_plank",
+    "primitive_life:warped_plank"
+  ]
+}

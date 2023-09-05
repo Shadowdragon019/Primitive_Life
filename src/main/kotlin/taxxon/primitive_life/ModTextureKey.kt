@@ -5,4 +5,5 @@ import net.minecraft.data.client.TextureKey.of
 object ModTextureKey {
     val top = of("top")
     val side = of("side")
+    val planks = of("planks")
 }

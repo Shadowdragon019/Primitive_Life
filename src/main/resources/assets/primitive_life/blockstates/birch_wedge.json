@@ -1,16 +1,16 @@
 {
   "variants": {
     "wedges=1": {
-      "model": "primitive_life:block/birch_wedge_1"
+      "model": "primitive_life:block/wedge/birch/1"
     },
     "wedges=2": {
-      "model": "primitive_life:block/birch_wedge_2"
+      "model": "primitive_life:block/wedge/birch/2"
     },
     "wedges=3": {
-      "model": "primitive_life:block/birch_wedge_3"
+      "model": "primitive_life:block/wedge/birch/3"
     },
     "wedges=4": {
-      "model": "primitive_life:block/birch_wedge_4"
+      "model": "primitive_life:block/wedge/birch/4"
     }
   }
 }

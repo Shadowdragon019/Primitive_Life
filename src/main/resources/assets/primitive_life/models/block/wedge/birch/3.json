@@ -1,0 +1,7 @@
+{
+  "parent": "primitive_life:block/wedge/3",
+  "textures": {
+    "side": "minecraft:block/stripped_birch_log",
+    "top": "minecraft:block/stripped_birch_log_top"
+  }
+}
