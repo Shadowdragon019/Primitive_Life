@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "#primitive_life:timber",
+    "#primitive_life:wedges",
+    "#primitive_life:planks",
+    "#minecraft:planks",
+    "#minecraft:wooden_slabs",
+    "#minecraft:wooden_stairs",
+    "#minecraft:wooden_fences",
+    "#minecraft:fence_gates",
+    "#minecraft:wooden_doors",
+    "#minecraft:wooden_trapdoors",
+    "#minecraft:wooden_pressure_plates",
+    "#minecraft:wooden_buttons",
+    "#minecraft:all_signs"
+  ]
+}

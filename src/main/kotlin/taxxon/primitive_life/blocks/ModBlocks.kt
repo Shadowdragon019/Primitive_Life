@@ -46,7 +46,7 @@ object ModBlocks {
     private fun wedge(path: String, color: MapColor): WedgeBlock {
         return (block("${path}_wedge", WedgeBlock(path,
             FabricBlockSettings.create().mapColor(color).instrument(Instrument.BASS).strength(2.0f, 3.0f).sounds(
-                BlockSoundGroup.WOOD).nonOpaque().also {
+                BlockSoundGroup.WOOD).nonOpaque().requiresTool().also {
                 if (!(path == "crimson" || path == "warped")) {
                     it.burnable()
                 }
@@ -57,7 +57,7 @@ object ModBlocks {
     private fun plank(path: String, color: MapColor): PlankBlock {
         return (block("${path}_plank", PlankBlock(path,
             FabricBlockSettings.create().mapColor(color).instrument(Instrument.BASS).strength(2.0f, 3.0f).sounds(
-                BlockSoundGroup.WOOD).nonOpaque().also {
+                BlockSoundGroup.WOOD).nonOpaque().requiresTool().also {
                 if (!(path == "crimson" || path == "warped")) {
                     it.burnable()
                 }

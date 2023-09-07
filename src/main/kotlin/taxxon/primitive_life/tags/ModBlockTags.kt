@@ -3,7 +3,6 @@ package taxxon.primitive_life.tags
 import net.minecraft.block.Block
 import net.minecraft.registry.RegistryKeys
 import net.minecraft.registry.tag.TagKey
-import net.minecraft.util.Identifier
 import taxxon.primitive_life.ModIdentifier
 
 object ModBlockTags {

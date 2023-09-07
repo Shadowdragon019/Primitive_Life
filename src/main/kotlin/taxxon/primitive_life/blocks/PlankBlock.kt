@@ -10,7 +10,6 @@ import net.minecraft.item.Items
 import net.minecraft.sound.SoundCategory
 import net.minecraft.sound.SoundEvents
 import net.minecraft.state.StateManager
-import net.minecraft.state.property.IntProperty
 import net.minecraft.state.property.Properties
 import net.minecraft.util.ActionResult
 import net.minecraft.util.Hand
@@ -22,7 +21,6 @@ import net.minecraft.util.shape.VoxelShapes
 import net.minecraft.world.BlockView
 import net.minecraft.world.World
 import net.minecraft.world.WorldAccess
-import taxxon.primitive_life.PrimitiveLife
 import kotlin.math.min
 
 class PlankBlock(_type: String, settings: Settings): Block(settings), Waterloggable {
@@ -34,7 +32,7 @@ class PlankBlock(_type: String, settings: Settings): Block(settings), Waterlogga
     private fun y_shape(num: Int, height: Double): VoxelShape {
         return createCuboidShape(0.0, height, maxOf(16.25-4*num, 0.25), 16.0, height+2.0, 15.75)
     }
-    val hitboxes = mutableListOf<VoxelShape>().also { list ->
+    private val hitboxes = mutableListOf<VoxelShape>().also { list -> // This isn't optimal as it does this for each PlankBlock instantiated (10 times total) instead of 1, but whatever
         repeat(32) {
             val num = it
             var final: VoxelShape
