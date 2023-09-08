@@ -3,6 +3,7 @@ package taxxon.primitive_life.datagen
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider
 import taxxon.primitive_life.blocks.ModBlocks
+import taxxon.primitive_life.items.ModItems
 
 class LangGen(generator: FabricDataOutput): FabricLanguageProvider(generator, "en_us") {
     override fun generateTranslations(translationBuilder: TranslationBuilder?) {
@@ -27,5 +28,7 @@ class LangGen(generator: FabricDataOutput): FabricLanguageProvider(generator, "e
         translationBuilder?.add(ModBlocks.cherry_plank, "Cherry Plank")
         translationBuilder?.add(ModBlocks.crimson_plank, "Crimson Plank")
         translationBuilder?.add(ModBlocks.warped_plank, "Warped Plank")
+
+        translationBuilder?.add(ModItems.wooden_rod, "Wooden Rod")
     }
 }

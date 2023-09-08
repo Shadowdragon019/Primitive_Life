@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "#minecraft:logs"
+    "#primitive_life:requires_stone_tool_for_drops"
   ]
 }

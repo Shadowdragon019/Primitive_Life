@@ -18,5 +18,6 @@
   "block.primitive_life.spruce_plank": "Spruce Plank",
   "block.primitive_life.spruce_wedge": "Spruce Wedge",
   "block.primitive_life.warped_plank": "Warped Plank",
-  "block.primitive_life.warped_wedge": "Warped Wedge"
+  "block.primitive_life.warped_wedge": "Warped Wedge",
+  "item.primitive_life.wooden_rod": "Wooden Rod"
 }

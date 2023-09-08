@@ -24,8 +24,8 @@ import taxxon.primitive_life.items.ModItems
 import taxxon.primitive_life.tags.ModBlockTags
 
 object PrimitiveLife : ModInitializer {
-	val id = "primitive_life"
-	val name = "Primitive Life"
+	const val id = "primitive_life"
+	const val name = "Primitive Life"
 	val logger: Logger = LoggerFactory.getLogger(name)
 
 	override fun onInitialize() {
@@ -37,7 +37,6 @@ object PrimitiveLife : ModInitializer {
 		ModBlocks.register_blocks()
 
 		UseBlockCallback.EVENT.register(UseBlockCallback { player: PlayerEntity, world: World, hand: Hand, result: BlockHitResult ->
-
 			/*logger.info(Registries.BLOCK.streamTagsAndEntries().count().toString())
 			for (pair in Registries.BLOCK.streamTagsAndEntries()) {
 				logger.info(pair.first.id.toString())
@@ -45,7 +44,6 @@ object PrimitiveLife : ModInitializer {
 					logger.info(block.value().name.string)
 				}
 			}*/
-
 			val pos = result.blockPos
 			val state = world.getBlockState(pos)
 			val block = state.block
@@ -74,8 +72,8 @@ object PrimitiveLife : ModInitializer {
 				}
 				ActionResult.SUCCESS
 			}
-
 			ActionResult.PASS
 		})
 	}
 }
+// Remove & add tags from Stick & Wooden Rod

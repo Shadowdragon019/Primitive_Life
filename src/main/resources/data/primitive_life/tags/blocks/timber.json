@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "#primitive_life:timber/woods",
-    "#primitive_life:timber/logs"
+    "#primitive_life:timber/logs",
+    "#minecraft:logs"
   ]
 }

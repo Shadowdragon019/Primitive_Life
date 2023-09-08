@@ -9,6 +9,7 @@ import taxxon.primitive_life.ModModels
 import taxxon.primitive_life.ModTextureKey
 import taxxon.primitive_life.blocks.ModBlocks
 import taxxon.primitive_life.blocks.ModProperties
+import taxxon.primitive_life.items.ModItems
 
 class ModelGen(generator: FabricDataOutput) : FabricModelProvider(generator) {
     override fun generateBlockStateModels(blockStateModelGenerator: BlockStateModelGenerator?) {
@@ -55,5 +56,6 @@ class ModelGen(generator: FabricDataOutput) : FabricModelProvider(generator) {
         for (plank in ModBlocks.planks) {
             itemModelGenerator?.register(plank.asItem(), Models.GENERATED)
         }
+        itemModelGenerator?.register(ModItems.wooden_rod, Models.HANDHELD)
     }
 }
